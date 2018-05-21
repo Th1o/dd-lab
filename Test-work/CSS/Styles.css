@@ -1,0 +1,123 @@
+body {
+    min-width: 1040px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Georgia", sans-serif;
+    color: #404040;
+    background-image: url("http://4.bp.blogspot.com/-dvjGsDmoAJc/VXqTww9DrJI/AAAAAAAAXow/IBCy_Jz1zFc/s1600/Jurassic-World-Dinosaurs-Eating-Shark-Images.jpg");
+
+}
+
+.photo-count {
+    display: inline-block;
+    float: left;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.user-name {
+    display: inline-block;
+    float: right;
+
+}
+
+.post {
+    margin-bottom: 30px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 0 darkolivegreen;
+}
+.post-info::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.post img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+.caption {
+    display: inline-block;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    float: left;
+    width: 350px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    word-wrap: break-word;
+    border-bottom-right-radius: 15px;
+}
+.post-info {
+    padding-left: 270px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-top: -20px;
+}
+.photo-ul li:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.container {
+    padding: 50px;
+    width: 510px;
+    margin: auto;
+    background-color: white;
+    opacity: 0.9;
+}
+.avatar-image {
+    width: 180px;
+    height: 180px;
+    display: block;
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border-radius: 50%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    width: 190px;
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    word-wrap: break-word;
+    border: 2px solid gray;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background-color: darkgray;
+    border-color: gray;
+}
+
+
