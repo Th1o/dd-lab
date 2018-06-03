@@ -1,0 +1,137 @@
+@import '~reboot.css';
+@import "~include-media/dist/include-media";
+@import 'menu.scss';
+@import 'common.scss';
+
+$breakpoints: (
+        'desktop': 1000px,
+        'tablet': 800px
+);
+
+.main {
+  margin: 0 auto;
+  width: 90%;
+
+  .section-left {
+    flex: 1 0;
+    margin-right: 10px;
+
+    .article-post:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .section-right {
+    flex: 3 0;
+
+    .top {
+      flex: 1 100%;
+
+      margin-bottom: 10px;
+
+      .article-post {
+        flex: 1 0;
+        margin-bottom: 0;
+      }
+
+      .img {
+        flex: 1 0;
+      }
+    }
+
+    .bottom-left {
+      flex: 2 0;
+      margin-right: 10px;
+
+      .article-post:last-child {
+        margin-bottom: 0;
+      }
+
+    }
+    .bottom-right {
+      flex: 1 0;
+
+      .article-post:last-child {
+        margin-bottom: 0;
+      }
+
+    }
+  }
+
+}
+
+@include media('<desktop') {
+  .main .section-right {
+    flex: 1 0;
+
+    .top {
+      flex-wrap: wrap;
+
+      .article-post {
+        flex: 1 100%;
+        order: 1;
+      }
+
+      .img {
+        flex: 1 100%;
+      }
+    }
+
+    .bottom-left,
+    .bottom-right {
+      flex: 1 0;
+    }
+  }
+}
+
+@include media('<=tablet') {
+
+  .nav-menu .link:last-child {
+
+    margin-left: 0;
+    margin-bottom: 10px;
+    order: -1;
+  }
+
+  .main {
+    .nav-menu {
+
+      .link {
+        flex: 1 100%;
+        border-bottom: 1px solid #d0d0d0;
+        margin-right: 0;
+
+      }
+
+    }
+
+    .section-left {
+      flex: 1 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    .section-right {
+      flex: 1 100%;
+      .bottom-left {
+        flex: 1 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      .bottom-right {
+        flex: 1 100%;
+      }
+    }
+  }
+
+}
+
+@include media('>=tablet') {
+  .nav-menu::after {
+    content: "";
+    flex: 1;
+    order: 1;
+    background-color: #fff196;
+  }
+}

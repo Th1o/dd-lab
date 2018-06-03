@@ -1,0 +1,24 @@
+.main .nav-menu {
+  flex: 1 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .link {
+    background-color: white;
+    padding: 10px 15px;
+    margin-right: 10px;
+
+    a {
+      color: black;
+    }
+  }
+
+
+}
+
+.nav-menu .link:last-child  {
+   margin-right: 0;
+   margin-left: 10px;
+   order: 2;
+ }
